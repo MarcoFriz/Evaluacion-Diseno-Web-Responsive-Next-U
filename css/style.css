@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body {
+	font-family: 'Dancing Script', cursive;
+	background: #02010a;
+}
+
+img {
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+header {
+	background: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	margin: 0 auto;
+	padding: 5px;
+	min-height: 50px;
+	font-size: 30px;
+	text-align: center;
+	animation: slidein 1s;
+}
+/* Animacion */
+@-webkit-keyframes slidein { 
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+
+header .title {
+	color: white;
+	text-shadow: 2px 2px #02010a;
+}
+
+@media only screen and (min-width: 901px) {
+	header .title {
+		float: left;
+	}
+	header .menu-desktop {
+		float: right;
+	}
+}
+
+header a {
+	color: white;
+}
+
+.no-subrayar {
+	text-decoration: none;
+}
+
+/* Mobil */
+@media only screen and (max-width: 900px) {
+	.contenido {
+		width: 100%;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 901px) {
+	.contenido {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+}
+
+main {
+	background: #82c3a6;
+	padding: 20px;
+}
+
+main img {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Imagenes para seleccionar */
+
+/* Mobil */
+article {
+	background: #d5c75f;
+	border: 10px;
+	padding: 10px;
+}
+
+article img {
+	width: 100%;
+	margin: 0px 0px 20px 0px;
+}
+
+/* Desktop */
+@media only screen and (min-width: 901px) {
+	article {
+		display: flex;
+	}
+	article a {
+		width: 50%;
+		padding: 0px 10px;
+		margin: auto;
+	}
+}
+
+article .izquierda {
+	transition: rotate 0.5s;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+article .izquierda:hover {
+	-webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	rotate: 10deg;
+	border: 2px;
+}
+
+article .derecha {
+	transition: translate 0.5s;
+	text-align: center;
+	color: black;
+	font-weight: bold:
+}
+
+article .derecha:hover {
+	-webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	translate: 20px -5px;
+	border: 2px;
+}
+
+footer {
+	border-radius: 0px 0px 10px 10px;
+	background: #C6d5c5;
+	padding: 5px;
+}
+
+footer .column {
+	width: 100%;
+}
+
+@media only screen and (min-width: 901px) {
+	footer {
+		display: flex;
+	}
+	footer .column {
+		width: 25%;
+	}
+}
+
+/** Sección Galeria */
+.galeria {
+	display: block;
+}
+
+.galeria img {
+	width: 100%;
+	padding: 5px 10px 5px 0px;
+	margin: auto;
+}
+
+@media only screen and (min-width: 901px) {
+	.galeria img {
+		width: 31.5%;
+		padding: 5px 10px 5px 0px;
+		margin: auto;
+	}
+}
+
+.galeria img:first-child {
+	-web-kit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.galeria img:nth-child(even) {
+	-web-kit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.galeria img:nth-child(3) {
+	-web-kit-filter: sepia(90%);
+	filter: sepia(90%);
+}
